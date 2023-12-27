@@ -14,5 +14,8 @@
     "astro": "^4.0.7",
     "sass": "^1.69.5",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "turnstile-types": "^1.2.0"
   }
 }
