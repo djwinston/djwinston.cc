@@ -1,22 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Card from '@components/Card.astro';
+import Card from '@components/Card.astro'
 ---
 
-<Layout title="Kitty">
+<Layout title="djwinston">
   <main>
     <section class="route-link">
-      <Card title='Elephant' body='Elephant' href='/elephant'/>
-      <Card title='Glow' body='Glow' href='/glow'/>
-      <Card title='Candle' body='Candle' href='/candle'/>
-      <Card title='Truck' body='Truck' href='/truck'/>
-      <Card title='Christmas globe' body='Christmas globe' href='/christmas-globe'/>
-      <Card title='Astronaut' body='Astronaut' href='/astronaut'/>
-      <Card title='Submarine' body='Submarine' href='/submarine'/>
-      <Card title='Palette' body='Palette' href='/palette'/>
-      <Card title='Pacman' body='Pacman' href='/pacman'/>
-      <Card title='Mail' body='Mail' href='/mail'/>
-      <Card title='Hello' body='Hello' href='/hello'/>
+      <ul>
+        <Card title="Elephant" body="Elephant" href="/elephant" />
+        <Card title="Glow" body="Glow" href="/glow" />
+        <Card title="Candle" body="Candle" href="/candle" />
+        <Card title="Truck" body="Truck" href="/truck" />
+        <Card title="Christmas globe" body="Christmas globe" href="/christmas-globe" />
+        <Card title="Astronaut" body="Astronaut" href="/astronaut" />
+        <Card title="Submarine" body="Submarine" href="/submarine" />
+        <Card title="Palette" body="Palette" href="/palette" />
+        <Card title="Pacman" body="Pacman" href="/pacman" />
+        <Card title="Mail" body="Mail" href="/mail" />
+        <Card title="Hello" body="Hello" href="/hello" />
+      </ul>
     </section>
     <section>
       <div class="cat">
@@ -37,7 +39,6 @@ import Card from '@components/Card.astro';
 </Layout>
 
 <style lang="scss">
-  
   @import '../styles/cat.scss';
   .route-link {
     padding: 10px 10px 10px 10px;
