@@ -16,6 +16,7 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@vite-pwa/astro": "^0.2.0",
     "astro-robots-txt": "^1.0.0",
     "turnstile-types": "^1.2.0"
   }

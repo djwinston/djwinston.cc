@@ -1,0 +1,1 @@
+// https://vite-pwa-org.netlify.app/frameworks/astro;
