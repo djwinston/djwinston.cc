@@ -2,17 +2,14 @@ import type { TurnstileObject } from "turnstile-types";
 
 declare const turnstile: TurnstileObject;
 
-const isProd = import.meta.env.PROD;
+const site_key = import.meta.env.PUBLIC_CF_SITE_KEY;
 
-if (isProd) {
   window.onloadTurnstileCallback = function () {
-    turnstile.render('#cloudflare-container', {
-      sitekey: `${import.meta.env.CF_SITE_KEY}`,
+    turnstile.render('#captcha', {
+      sitekey: site_key,
       callback: function (token) {
-        console.log(`Challenge Success ${token}`);
+        console.debug(`Challenge Success ${token}`)
+        setTimeout(() => turnstile.remove(), 3000)
       },
-    });
-  };
-} else {
-  console.info('DEVELOPMENT')
-}
+    })
+  }
